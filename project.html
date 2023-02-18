@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color: #0F3E7D;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #07325B;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #0F3E7D;
+}
+  
+body {
+ background-color: rgb(1, 22, 66);
+}
+</style>
+</head>
+<body>
+
+<h1 style="color: azure; font-size:4em;">0.3 Take A Look At My Recent Projects<hr></h1>
+
+<button type="button" class="collapsible">+ Worker's Mobile Web Application</button>
+<div class="content">
+<ul>
+  <li style="font-size:15px; color: azure;">Worker's Mobile Application is used to capture worker's clock in and clock out. It is also been used for workers to update status and details of their jobs progress. The input is saved to a remote database.
+</li>
+</ul>
+<p style="font-size:15px; color: azure;">HTML/CSS, MySQL</p>
+</div>
+</br>
+
+<button type="button" class="collapsible">+ 
+Auto Generation of Job Schedule</button>
+<div class="content">
+
+<ul>
+  <li style="font-size:15px; color: azure;">Job Schedule printout displays the worker's job schedule based on specific job requirement. The data are extracted from a remote server.
+</li>
+</ul>
+<p style="font-size:15px; color: azure;">HTML/CSS, PHP, MySQL</p>
+</div>
+</br>
+
+<button type="button" class="collapsible">+ 
+Auto Generation of Job Report</button>
+<div class="content">
+
+<ul>
+  <li style="font-size:15px; color: azure;">Job Report printout displays the real start and end date as well as start and end time of the worker performed the job. It also displays the job details that worker has updated in the mobile web app. The data are extracted from a remote server.
+</li>
+</ul>
+<p style="font-size:15px; color: azure;">HTML/CSS, PHP, MySQL</p>
+</div>
+</br>
+
+<button type="button" class="collapsible">+ 
+CRM Automation Function - Staff KPI Calculation</button>
+<div class="content">
+
+<ul>
+  <li style="font-size:15px; color: azure;">This function is used to capture date and time of staff performing the tasks given. System will calculate how many days the staff took to complete the task given. 
+</li>
+</ul>
+<p style="font-size:15px; color: azure;">PHP, MySQL</p>
+</div>
+</br>
+
+<button type="button" class="collapsible">+ 
+CRM Automation Function - Auto-Assigned Tickets to Engineers</button>
+<div class="content">
+
+<ul>
+  <li style="font-size:15px; color: azure;">This function is used to auto-assign the tickets reported by client via emial to the engineers. System will assign the ticket based on category and role. 
+</li>
+</ul>
+<p style="font-size:15px; color: azure;">PHP, MySQL</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+</body>
+</html>
