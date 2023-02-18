@@ -4,7 +4,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .collapsible {
-  background-color: #0F3E7D;
+  background-color:#07438A  
+ ;
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -29,19 +30,37 @@
 body {
  background-color: rgb(1, 22, 66);
 }
+
+      input.right {
+        float: right;
+        border: none;
+  background-color: #F06F20;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  color: azure;
+      }
+
 </style>
 </head>
 <body>
+<input type="button" value="Main Page" class="right" onclick="document.location='about.html'" ></input>
 
-<h1 style="color: azure; font-size:4em;">0.3 Things I've Built<hr></h1>
+<h1 style="color: azure; font-size:4em;">0.3 Take A Look At My Recent Projects<hr></h1>
 
+
+</br>
 <button type="button" class="collapsible">+ Worker's Mobile Web Application</button>
 <div class="content">
 <ul>
   <li style="font-size:15px; color: azure;">Worker's Mobile Application is used to capture worker's clock in and clock out. It is also been used for workers to update status and details of their jobs progress. The input is saved to a remote database.
 </li>
+<li style="font-size:15px; color: azure;">HTML/CSS, MySQL</li>
 </ul>
-<p style="font-size:15px; color: azure;">HTML/CSS, MySQL</p>
+<button type="submit">
+        <img src="newtabicon.png" alt="buttonpng" border="0" style="width:20%" onclick=" window.open('Resume_WanZalikha.pdf','_blank')">
+</button>
 </div>
 </br>
 
@@ -108,7 +127,6 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
-
 
 </body>
 </html>
