@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color: #0F3E7D;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #07325B;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #0F3E7D;
+}
+</style>
+</head>
+<body>
+
+<h1 style="color: azure; font-size:4em;">0.2 Where I’ve Worked<hr></h1>
+
+<button type="button" class="collapsible">EBS Systems Sdn Bhd</button>
+<div class="content">
+<p style="font-size:15px; color: azure;">
+Application Support Engineer @ EBS Systems Sdn Bhd
+</p>
+<p style="font-size:15px; color: azure;">
+2022 - Present
+</p>
+
+<ul>
+  <li style="font-size:15px; color: azure;">Deploy web development/CRM projects by overseeing and performing the front-end software
+configurations.
+</li>
+  <li style="font-size:15px; color: azure;">Develop back-end software scripts for web development projects with PHP programming.
+</li>
+  <li style="font-size:15px; color: azure;">Develop RPA program for CRM.
+</li>
+  <li style="font-size:15px; color: azure;">Develop web design with HTML, CSS and Javascript.
+</li>
+  <li style="font-size:15px; color: azure;">Perform troubleshooting and technical support for requests triggered by customers.
+</li>
+  <li style="font-size:15px; color: azure;">Streamline communication with customers and perform analysis of customer’s business process
+requirement.
+</li>
+  <li style="font-size:15px; color: azure;">Propose and design solution for customer’s CRM system requirement
+</li>
+  <li style="font-size:15px; color: azure;">Responsible for software testing and quality control.</li>
+</ul>
+</div>
+</br>
+<button type="button" class="collapsible">QL Maxincome Sdn Bhd</button>
+<div class="content">
+
+<p style="font-size:15px; color: azure;">
+Maintenance Engineer @ QL Maxincome Sdn Bhd
+</p>
+<p style="font-size:15px; color: azure;">
+2021 - Present
+</p>
+
+<ul>
+  <li style="font-size:15px; color: azure;">In charge of repairing and maintenance services for FamilyMart stores in Malaysia.
+</li>
+  <li style="font-size:15px; color: azure;">Responsible for the effective and efficient operation of machines with minimal downtime.
+</li>
+  <li style="font-size:15px; color: azure;">Plan and execute preventive maintenance and scheduled maintenance on equipment.
+</li>
+  <li style="font-size:15px; color: azure;">Generate maintenance cost, breakdown reports and key learnings weekly to avoid future reoccurrence as well as recommend and justify to management for reducing equipment breakdown and
+maintenance cost.
+</li>
+  <li style="font-size:15px; color: azure;">Attend to technical issue on site and provide remote technical support.
+</li>
+  <li style="font-size:15px; color: azure;">Support sales initiatives on technical matters to meet sales target.
+</li>
+  <li style="font-size:15px; color: azure;">Liaise with Utility Companies, contractors, vendors and suppliers.
+</li>
+  <li style="font-size:15px; color: azure;">Lead and assign a group of technicians in troubleshooting of any issues and breakdowns</li>
+</ul>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+</body>
+</html>
