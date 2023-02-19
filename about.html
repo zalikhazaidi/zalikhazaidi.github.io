@@ -1,34 +1,13 @@
 <!DOCTYPE html>
 <html>
-  
 <head>
-<title>Text alignment with icon</title>
-<meta name="viewport" content=
-                "width=device-width, 
-                 initial-scale=1">
-<link rel="stylesheet" href=
-"https://fonts.googleapis.com/icon?family=Material+Icons">
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- <style>
-        .parentDiv1 {
-            display: block;
-            height: 90px;
-            width:800px;
-            font-size: 4em;
-        }
-  
-
-/* Darker background on mouse-over */
-.btn:hover {
-  background-color: #07C2B9  ;
-}
-
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
 body {
  background-color: rgb(2, 15, 43);
 }
-
-div2 {
+div {
         width: 500px;
         overflow: hidden;
         border: 2px dotted #0BF2E8 ;
@@ -41,45 +20,45 @@ div2 {
 
 .btn {
   border: none;
-  color: azure;
   background-color: inherit;
   padding: 14px 28px;
   font-size: 16px;
   cursor: pointer;
   display: inline-block;
-                margin-left: 10px;
-            float: right;
 }
  
+ul {
+  list-style-image: url('sqcyan.gif');
+}
+
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border: 5px dotted #0BF2E8;
+  border: 5px solid #0BF2E8;
   padding: 5px;
 }
-
+ 
+input.right {
+float: right;
+border: none;
+background-color: #0BF2E8;
+padding: 14px 28px;
+font-size: 16px;
+cursor: pointer;
+display: inline-block;
+color: azure;
+ }
 </style>
 </head>
-  
 <body>
-    <!--parent div-->
-    <div class="parentDiv1">      
-        <!--display for the all div is block-->
-        <div style="color: azure">
-            <span class="text">About Me</span>
-            <button class="btn">
-              <i class="fa fa-home" style="font-size:30px; onclick="document.location='index.htm'"" ></i></button>
-            </span>
-        </div>
-    </div>
-    <hr>
-</br>    
-<img src="image.jpg" alt="Paris" style="width:20%;">
-</br>
+<input type="button" value="Main Page" class="right" onclick="document.location='index.htm'" ></input>
+<h1 style="color: azure; font-size:4em;">01. About Me <hr></h1>
 
+<img src="image.jpg" alt="Paris" style="width:20%;">
+ </br>
 <center>
-    <test>
+    <div>
 <p style="font-size:15px; color: azure;">Hello! My name is Wan Zalikha and I enjoy creating things for the web. I just started in web development journey in 2022, and mostly I'm involving in front-end development in 2022. I have committed my time in improving my skills. 
 
 <p style="font-size:15px; color: azure;">
@@ -93,10 +72,9 @@ Here are the technologies I've been working with:
   <p style="font-size:15px; color: azure;">HTML/CSS</p>
   <p style="font-size:15px; color: azure;">PHP</p>
      <p style="font-size:15px; color: azure;">MySQL</p>
-    </test>
+    </div>
 </center>
-    
-   
+
 
 </body>
 </html>
