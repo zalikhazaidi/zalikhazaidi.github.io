@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,11 +6,17 @@
 body {
  background-color: rgb(1, 22, 66);
 }
-
-.vl {
-  border-right: 10px solid silver;
-  height: 300px;
-}
+      div {
+        width: 1000px;
+        height: 400px;
+        overflow: hidden;
+        border: 2px dotted dashed solid double #EEF4F4  ;
+        clear: both;
+        padding: 50px;
+        font-size:15px; 
+        color: azure;
+    vertical-align: middle
+      }
 
 .btn {
   border: none;
@@ -45,24 +52,26 @@ ul {
 </head>
 <body>
 
-<div class="vl">
-<h1 style="color: azure; font-size:4em;">Welcome.</h1>
+
 
 <div style="font-size:15px; color: azure;">
+<h1 style="color: azure; font-size:4em;">Welcome.</h1>
 <p>My name is Wan Zalikha.</p>
 
 <p>I'm an Application Support Engineer-Web Developer for the EBS Systems team. I do support for CRM systems and I build things for the web.</p>
 
 <p>I'm passionate about engineering, technology, web development as well as automation and I enjoy working with developers who build applications.</p>
-</div>
 
 <button class="btn about" onclick="document.location='about.html'">01. About</button>
 <button class="btn experience" onclick="document.location='experience.html'">02. Experience</button>
 <button class="btn project" onclick="document.location='project.html'">03. Project</button>
 <button class="btn2 resume" onclick=" window.open('Resume_WanZalikha.pdf','_blank')">Resume</button>
 
+</div>
+
+
+
 
 </div>
 </body>
 </html>
-
